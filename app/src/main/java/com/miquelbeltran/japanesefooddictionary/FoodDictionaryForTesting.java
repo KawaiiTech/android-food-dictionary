@@ -29,7 +29,7 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         categoryBread.addFoodDescription(melonpan);
         foodCategories.add(categoryBread);
 
-        FoodCategory categoryDeepFried = new FoodCategory("Deep Fried");
+        FoodCategory categoryDeepFried = new FoodCategory("Deep-fried");
         foodCategories.add(categoryDeepFried);
 
         FoodCategory categoryGrilledPan = new FoodCategory("Grilled or Pan fried");
