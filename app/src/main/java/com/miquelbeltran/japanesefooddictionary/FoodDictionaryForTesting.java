@@ -44,6 +44,9 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         FoodCategory categoryGrilledPan = new FoodCategory("Grilled or Pan fried");
         foodCategories.add(categoryGrilledPan);
 
+        FoodCategory categoryToppings = new FoodCategory("Toppings");
+        foodCategories.add(categoryToppings);
+
         return foodCategories;
     }
 
