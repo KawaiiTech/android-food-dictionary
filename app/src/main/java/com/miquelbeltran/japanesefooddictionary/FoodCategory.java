@@ -24,6 +24,6 @@ public class FoodCategory {
 
     @Override
     public String toString() {
-        return name;
+        return name + " (" + foodDescriptionList.size() + ")";
     }
 }
