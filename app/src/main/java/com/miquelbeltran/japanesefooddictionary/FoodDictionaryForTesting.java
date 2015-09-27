@@ -12,12 +12,12 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         List<FoodCategory> foodCategories = new ArrayList<FoodCategory>();
 
         FoodCategory categoryRice = new FoodCategory("Rice");
-        FoodDescription whiteRice = new FoodDescription();
+        FoodDescription whiteRice = new FoodDescription("white rice", "白米");
         categoryRice.addFoodDescription(whiteRice);
         foodCategories.add(categoryRice);
 
         FoodCategory categorySweets = new FoodCategory("Sweets");
-        FoodDescription mochi = new FoodDescription();
+        FoodDescription mochi = new FoodDescription("mochi rice cake", "餅");
         categorySweets.addFoodDescription(mochi);
         foodCategories.add(categorySweets);
 
@@ -25,6 +25,8 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         foodCategories.add(categoryNoodles);
 
         FoodCategory categoryBread = new FoodCategory("Bread");
+        FoodDescription melonpan = new FoodDescription("melonpan sweet bun", "メロンパン");
+        categorySweets.addFoodDescription(melonpan);
         foodCategories.add(categoryBread);
 
         FoodCategory categorySoftDrinks = new FoodCategory("Soft Drinks");
@@ -35,6 +37,12 @@ public class FoodDictionaryForTesting implements FoodDictionary {
 
         FoodCategory categorySake = new FoodCategory("Sake");
         foodCategories.add(categorySake);
+
+        FoodCategory categoryDeepFried = new FoodCategory("Deep Fried");
+        foodCategories.add(categoryDeepFried);
+
+        FoodCategory categoryGrilledPan = new FoodCategory("Grilled or Pan fried");
+        foodCategories.add(categoryGrilledPan);
 
         return foodCategories;
     }
