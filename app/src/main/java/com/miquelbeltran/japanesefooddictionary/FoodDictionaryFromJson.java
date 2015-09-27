@@ -26,6 +26,11 @@ public class FoodDictionaryFromJson implements FoodDictionary {
         AssetManager am = context.getAssets();
         InputStream is = am.open(dictionaryFileName);
         readJsonStream(is);
+        orderFoodList();
+    }
+
+    private void orderFoodList() {
+
     }
 
     @Override
@@ -35,7 +40,16 @@ public class FoodDictionaryFromJson implements FoodDictionary {
 
     @Override
     public List<FoodDescription> search(String searchTerm) {
-        return foodDescriptionList;
+        if (searchTerm.isEmpty())
+            return foodDescriptionList;
+        List<FoodDescription> result = new ArrayList<FoodDescription>();
+        for (FoodDescription food:
+             foodDescriptionList) {
+            if (food.english.contains(searchTerm)) {
+                result.add(food);
+            }
+        }
+        return result;
     }
 
     private void readJsonStream(InputStream in) throws IOException {

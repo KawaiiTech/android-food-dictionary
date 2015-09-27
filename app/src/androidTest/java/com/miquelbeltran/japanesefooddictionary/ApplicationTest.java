@@ -12,6 +12,8 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     private static final String FOOD_DICTIONARY_ASSET = "foodDict.json";
     private static final String SEARCH_TERM_EMPTY = "";
     private static final String SEARCH_TERM_1 = "rice";
+    private static final String SEARCH_TERM_2 = "hashed beef rice or hayashi rice";
+    private static final String SEARCH_TERM_3 = "NO RESULTS LOL";
 
     public ApplicationTest() {
         super(Application.class);
@@ -26,6 +28,10 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         assertTrue("There are some items when I search empty", foodDescriptionList.size() > 0);
         foodDescriptionList = foodDictionary.search(SEARCH_TERM_1);
         assertTrue("There are some items when I search: " + SEARCH_TERM_1, foodDescriptionList.size() > 0);
+        foodDescriptionList = foodDictionary.search(SEARCH_TERM_2);
+        assertTrue("There is only one item when I search: " + SEARCH_TERM_2, foodDescriptionList.size() == 1);
+        foodDescriptionList = foodDictionary.search(SEARCH_TERM_3);
+        assertTrue("There are no items when I search: " + SEARCH_TERM_3, foodDescriptionList.size() == 0);
 
     }
 }

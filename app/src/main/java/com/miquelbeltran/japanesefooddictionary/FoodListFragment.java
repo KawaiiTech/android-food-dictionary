@@ -118,7 +118,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
 
     private void updateListWithSearch(String search) {
         mAdapter = new ArrayAdapter<FoodDescription>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, foodDictionary.search(""));
+                android.R.layout.simple_list_item_1, android.R.id.text1, foodDictionary.search(search));
         ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
     }
 
