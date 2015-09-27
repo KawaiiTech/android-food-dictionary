@@ -10,6 +10,7 @@ import java.util.List;
  */
 public class ApplicationTest extends ApplicationTestCase<Application> {
     private static final String FOOD_DICTIONARY_ASSET = "foodDict.json";
+    private static final String SEARCH_TERM_EMPTY = "";
     private static final String SEARCH_TERM_1 = "rice";
 
     public ApplicationTest() {
@@ -20,11 +21,11 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         FoodDictionaryFromJson foodDictionary = new FoodDictionaryFromJson();
         foodDictionary.loadDictionary(getContext(), FOOD_DICTIONARY_ASSET);
         List<FoodCategory> foodCategories = foodDictionary.getCategories();
-        assertTrue(foodCategories.size() > 0);
-        List<FoodDescription> foodDescriptionList = foodDictionary.getAll();
-        assertTrue(foodDescriptionList.size() > 0);
-        foodDescriptionList =foodDictionary.search(SEARCH_TERM_1);
-        assertTrue(foodDescriptionList.size() > 0);
+        assertTrue("There are some categories", foodCategories.size() > 0);
+        List<FoodDescription> foodDescriptionList = foodDictionary.search(SEARCH_TERM_EMPTY);
+        assertTrue("There are some items when I search empty", foodDescriptionList.size() > 0);
+        foodDescriptionList = foodDictionary.search(SEARCH_TERM_1);
+        assertTrue("There are some items when I search: " + SEARCH_TERM_1, foodDescriptionList.size() > 0);
 
     }
 }
