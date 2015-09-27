@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ExpandableListAdapter;
+import android.widget.ExpandableListView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
@@ -39,13 +41,13 @@ public class CategoriesListFragment extends Fragment implements AbsListView.OnIt
     /**
      * The fragment's ListView/GridView.
      */
-    private AbsListView mListView;
+    private ExpandableListView mListView;
 
     /**
      * The Adapter which will be used to populate the ListView/GridView with
      * Views.
      */
-    private ListAdapter mAdapter;
+    private ExpandableListAdapter mAdapter;
 
     // TODO: Rename and change types of parameters
     public static CategoriesListFragment newInstance(String param1, String param2) {
@@ -73,8 +75,11 @@ public class CategoriesListFragment extends Fragment implements AbsListView.OnIt
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        mAdapter = new ArrayAdapter<FoodCategory>(getActivity(),
+        mAdapter = new CategoriesExpandableListAdapter(getActivity(),
                 android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().getCategories());
+
+                //= new ArrayAdapter<FoodCategory>(getActivity(),
+                //android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().getCategories());
     }
 
     @Override
@@ -83,8 +88,8 @@ public class CategoriesListFragment extends Fragment implements AbsListView.OnIt
         View view = inflater.inflate(R.layout.fragment_categoryitem, container, false);
 
         // Set the adapter
-        mListView = (AbsListView) view.findViewById(android.R.id.list);
-        ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
+        mListView = (ExpandableListView) view.findViewById(android.R.id.list);
+        mListView.setAdapter(mAdapter);
 
         // Set OnItemClickListener so we can be notified on item clicks
         mListView.setOnItemClickListener(this);

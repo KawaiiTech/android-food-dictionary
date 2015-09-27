@@ -9,6 +9,4 @@ public interface FoodDictionary {
     List<FoodCategory> getCategories();
 
     List<FoodDescription> search(String searchTerm);
-
-    List<FoodDescription> getAll();
 }

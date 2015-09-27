@@ -31,10 +31,4 @@ public class FoodDictionaryFromJson implements FoodDictionary {
         List<FoodDescription> foodDescriptionList = new ArrayList<FoodDescription>();
         return foodDescriptionList;
     }
-
-    @Override
-    public List<FoodDescription> getAll() {
-        List<FoodDescription> foodDescriptionList = new ArrayList<FoodDescription>();
-        return foodDescriptionList;
-    }
 }

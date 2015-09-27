@@ -61,10 +61,4 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         foodDescriptionList.add(new FoodDescription("tolo", "pom"));
         return foodDescriptionList;
     }
-
-    @Override
-    public List<FoodDescription> getAll() {
-        List<FoodDescription> foodDescriptionList = new ArrayList<FoodDescription>();
-        return foodDescriptionList;
-    }
 }
