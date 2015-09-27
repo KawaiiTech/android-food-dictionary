@@ -51,8 +51,8 @@ public class FoodDictionaryForTesting implements FoodDictionary {
     @Override
     public List<FoodDescription> search(String searchTerm) {
         List<FoodDescription> foodDescriptionList = new ArrayList<FoodDescription>();
-        FoodDescription mochi = new FoodDescription();
-        foodDescriptionList.add(mochi);
+
+        foodDescriptionList.add( new FoodDescription("mochi", "餅"));
         return foodDescriptionList;
     }
 
