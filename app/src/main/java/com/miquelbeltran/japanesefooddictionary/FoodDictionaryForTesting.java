@@ -21,7 +21,6 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         FoodDescription mochi = new FoodDescription("Mochi rice cake", "餅");
         categorySweets.addFoodDescription(mochi);
 
-
         FoodCategory categoryNoodles = new FoodCategory("Noodles");
         foodCategories.add(categoryNoodles);
 
