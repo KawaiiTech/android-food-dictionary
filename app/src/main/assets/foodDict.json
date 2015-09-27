@@ -21,31 +21,31 @@
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Rice",
+        "english": "fried rice",
+        "japanese": "炒飯",
+        "pronunciation": "chaahan"
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Rice",
+        "english": "brown rice",
+        "japanese": "玄米御飯",
+        "pronunciation": "genmaigohan"
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Rice",
+        "english": "hashed beef rice or hayashi rice",
+        "japanese": "ハヤシライス",
+        "pronunciation": "hayashiraisu"
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Rice",
+        "english": "rice cooked iron pot",
+        "japanese": "釜飯)",
+        "pronunciation": "kamameshi"
     },
 
     {
