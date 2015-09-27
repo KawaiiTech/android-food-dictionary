@@ -175,6 +175,83 @@
     },
 
     {
+        "category": "Rice",
+        "english": "sushi with ingredients on top of rice",
+        "japanese": "握り寿司",
+        "pronunciation": "nigirizushi"
+    },
+
+    {
+        "category": "Rice",
+        "english": "roll sushi",
+        "japanese": "巻き寿司",
+        "pronunciation": "makizushi"
+    },
+
+    {
+        "category": "Rice",
+        "english": "scattered sushi",
+        "japanese": "ちらし寿司",
+        "pronunciation": "chirashizushi"
+    },
+
+    {
+        "category": "Rice",
+        "english": "fried tofu packet filled with rice",
+        "japanese": "稲荷寿司",
+        "pronunciation": "inarizushi"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice wrapped in leafy pickle",
+        "japanese": "押し寿司",
+        "pronunciation": "meharizushi"
+    },
+
+    {
+        "category": "Noodles",
+        "english": "buckwheat Noodles",
+        "japanese": "蕎麦",
+        "pronunciation": "soba"
+    },
+
+    {
+        "category": "Noodles",
+        "english": "cold soba noodles topped with seaweed   ",
+        "japanese": "笊蕎麦",
+        "pronunciation": "zarusoba"
+    },
+
+    {
+        "category": "Noodles",
+        "english": "cold soba noodles",
+        "japanese": "裸蕎麦",
+        "pronunciation": "hadakasoba"
+    },
+
+    {
+        "category": "Noodles",
+        "english": "cold soba with toppings",
+        "japanese": "冷やし蕎麦",
+        "pronunciation": "hiyashisoba"
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
         "category": "",
         "english": "",
         "japanese": "",
