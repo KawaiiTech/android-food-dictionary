@@ -3,12 +3,15 @@ package com.miquelbeltran.japanesefooddictionary;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListAdapter;
 
 
@@ -34,6 +37,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
 
     private ListAdapter mAdapter;
     private AbsListView mListView;
+    private EditText mSearchField;
 
     /**
      * Use this factory method to create a new instance of
@@ -66,7 +70,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
         }
 
         mAdapter = new ArrayAdapter<FoodDescription>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().search("test"));
+                android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().search(""));
     }
 
     @Override
@@ -82,8 +86,32 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
         // Set OnItemClickListener so we can be notified on item clicks
         mListView.setOnItemClickListener(this);
 
+        mSearchField = (EditText) view.findViewById(R.id.editText);
+        mSearchField.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                updateListWithSearch(s.toString());
+            }
+        });
+
         // Inflate the layout for this fragment
         return view;
+    }
+
+    private void updateListWithSearch(String search) {
+        mAdapter = new ArrayAdapter<FoodDescription>(getActivity(),
+                android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().search(search));
+        ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
