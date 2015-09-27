@@ -79,7 +79,7 @@ public class CategoriesExpandableListAdapter implements ExpandableListAdapter {
         TextView textView = (TextView) convertView.findViewById(R.id.catTextView);
         textView.setText(categories.get(groupPosition).toString());
         ImageView imageView = (ImageView) convertView.findViewById(R.id.catImageView);
-        imageView.setImageResource(R.mipmap.ic_launcher);
+        imageView.setImageResource(categories.get(groupPosition).icon_res);
         return convertView;
     }
 
