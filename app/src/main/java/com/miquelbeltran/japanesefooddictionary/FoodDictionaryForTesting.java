@@ -11,15 +11,15 @@ public class FoodDictionaryForTesting implements FoodDictionary {
     public List<FoodCategory> getCategories() {
         List<FoodCategory> foodCategories = new ArrayList<FoodCategory>();
 
-        FoodCategory categoryRice = new FoodCategory("Rice");
-        FoodDescription whiteRice = new FoodDescription("White rice", "白米");
-        categoryRice.addFoodDescription(whiteRice);
-        foodCategories.add(categoryRice);
-
         FoodCategory categorySweets = new FoodCategory("Sweets");
         foodCategories.add(categorySweets);
         FoodDescription mochi = new FoodDescription("Mochi rice cake", "餅");
         categorySweets.addFoodDescription(mochi);
+
+        FoodCategory categoryRice = new FoodCategory("Rice");
+        FoodDescription whiteRice = new FoodDescription("White rice", "白米");
+        categoryRice.addFoodDescription(whiteRice);
+        foodCategories.add(categoryRice);
 
         FoodCategory categoryNoodles = new FoodCategory("Noodles");
         foodCategories.add(categoryNoodles);
@@ -29,15 +29,6 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         categoryBread.addFoodDescription(melonpan);
         foodCategories.add(categoryBread);
 
-        FoodCategory categorySoftDrinks = new FoodCategory("Soft Drinks");
-        foodCategories.add(categorySoftDrinks);
-
-        FoodCategory categoryTea = new FoodCategory("Tea");
-        foodCategories.add(categoryTea);
-
-        FoodCategory categorySake = new FoodCategory("Sake");
-        foodCategories.add(categorySake);
-
         FoodCategory categoryDeepFried = new FoodCategory("Deep Fried");
         foodCategories.add(categoryDeepFried);
 
@@ -46,6 +37,15 @@ public class FoodDictionaryForTesting implements FoodDictionary {
 
         FoodCategory categoryToppings = new FoodCategory("Toppings");
         foodCategories.add(categoryToppings);
+
+        FoodCategory categorySoftDrinks = new FoodCategory("Soft Drinks");
+        foodCategories.add(categorySoftDrinks);
+
+        FoodCategory categoryTea = new FoodCategory("Tea");
+        foodCategories.add(categoryTea);
+
+        FoodCategory categorySake = new FoodCategory("Sake");
+        foodCategories.add(categorySake);
 
         return foodCategories;
     }
