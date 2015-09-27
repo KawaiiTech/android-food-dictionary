@@ -27,7 +27,7 @@ public class FoodCategory {
             return R.mipmap.ic_launcher;
         }
         if (name.equals("Beef")) {
-            return R.mipmap.ic_launcher;
+            return R.drawable.icon_cat_beef;
         }
         return R.mipmap.ic_launcher;
     }
