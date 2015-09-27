@@ -59,6 +59,7 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         foodDescriptionList.add(new FoodDescription("white rice", "白米"));
         foodDescriptionList.add(new FoodDescription("melonpan", "メロンパン"));
         foodDescriptionList.add(new FoodDescription("tolo", "pom"));
+        foodDescriptionList.add(new FoodDescription("momomo", "餅"));
         return foodDescriptionList;
     }
 }
