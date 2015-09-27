@@ -26,7 +26,7 @@ public class FoodDictionaryForTesting implements FoodDictionary {
 
         FoodCategory categoryBread = new FoodCategory("Bread");
         FoodDescription melonpan = new FoodDescription("melonpan sweet bun", "メロンパン");
-        categorySweets.addFoodDescription(melonpan);
+        categoryBread.addFoodDescription(melonpan);
         foodCategories.add(categoryBread);
 
         FoodCategory categorySoftDrinks = new FoodCategory("Soft Drinks");
