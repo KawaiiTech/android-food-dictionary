@@ -21,7 +21,7 @@ public class FoodCategory {
             return R.drawable.icon_cat_rice;
         }
         if (name.equals("Toppings")) {
-            return R.mipmap.ic_launcher;
+            return R.drawable.icon_cat_topping;
         }
         if (name.equals("Deep-fried")) {
             return R.mipmap.ic_launcher;
@@ -29,9 +29,8 @@ public class FoodCategory {
         if (name.equals("Beef")) {
             return R.drawable.icon_cat_beef;
         }
-
-        if (name.equals("Toppings")) {
-            return R.drawable.icon_cat_topping;
+        if (name.equals("Noodles")) {
+            return R.drawable.icon_cat_noodles;
         }
         return R.mipmap.ic_launcher;
     }
