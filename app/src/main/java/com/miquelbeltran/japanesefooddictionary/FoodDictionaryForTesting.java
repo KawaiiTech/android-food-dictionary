@@ -9,11 +9,12 @@ import java.util.List;
 public class FoodDictionaryForTesting implements FoodDictionary {
     @Override
     public List<FoodCategory> getCategories() {
-        List<FoodCategory> FoodCategories = new ArrayList<FoodCategory>();
+        List<FoodCategory> foodCategories = new ArrayList<FoodCategory>();
         FoodCategory categoryRice = new FoodCategory("Rice");
         FoodDescription whiteRice = new FoodDescription();
         categoryRice.addFoodDescription(whiteRice);
-        return FoodCategories;
+        foodCategories.add(categoryRice);
+        return foodCategories;
     }
 
     @Override
