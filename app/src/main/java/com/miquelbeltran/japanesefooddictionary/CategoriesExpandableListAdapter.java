@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -73,10 +74,12 @@ public class CategoriesExpandableListAdapter implements ExpandableListAdapter {
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = activity.getLayoutInflater().inflate(simple_list_item_1, null);
+            convertView = activity.getLayoutInflater().inflate(R.layout.cat_item, null);
         }
-        TextView textView = (TextView) convertView.findViewById(text1);
+        TextView textView = (TextView) convertView.findViewById(R.id.catTextView);
         textView.setText(categories.get(groupPosition).toString());
+        ImageView imageView = (ImageView) convertView.findViewById(R.id.catImageView);
+        imageView.setImageResource(R.mipmap.ic_launcher);
         return convertView;
     }
 

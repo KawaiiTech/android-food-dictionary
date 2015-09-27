@@ -41,7 +41,7 @@ public class MainActivity extends FragmentActivity {
         // Add tabs, specifying the tab's text and TabListener
         addTab("Categories", actionBar, tabListener);
         addTab("Search", actionBar, tabListener);
-        addTab("Favourites", actionBar, tabListener);
+        //TODO: addTab("Favourites", actionBar, tabListener);
         pager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
             public void onPageSelected(int position) {
