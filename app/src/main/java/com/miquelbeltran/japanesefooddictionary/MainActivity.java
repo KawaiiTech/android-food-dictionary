@@ -1,19 +1,22 @@
 package com.miquelbeltran.japanesefooddictionary;
 
 import android.app.ActionBar;
-import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        final ViewPager pager = setupComponents();
         final ActionBar actionBar = getActionBar();
 
         // Specify that tabs should be displayed in the action bar.
@@ -23,6 +26,7 @@ public class MainActivity extends Activity {
         ActionBar.TabListener tabListener = new ActionBar.TabListener() {
             public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
                 // show the given tab
+                pager.setCurrentItem(tab.getPosition());
             }
 
             public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
@@ -38,6 +42,12 @@ public class MainActivity extends Activity {
         addTab("English", actionBar, tabListener);
         addTab("Japanese", actionBar, tabListener);
         addTab("Favourites", actionBar, tabListener);
+        pager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+            @Override
+            public void onPageSelected(int position) {
+                actionBar.setSelectedNavigationItem(position);
+            }
+        });
     }
 
     private void addTab(String favourites, ActionBar actionBar, ActionBar.TabListener tabListener) {
@@ -45,6 +55,32 @@ public class MainActivity extends Activity {
                 actionBar.newTab()
                         .setText(favourites)
                         .setTabListener(tabListener));
+    }
+
+    private ViewPager setupComponents() {
+        setContentView(R.layout.activity_main);
+        final ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        pager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
+            @Override
+            public Fragment getItem(int position) {
+                switch (position) {
+                    case 0:
+                        return new CategoriesListFragment();
+//                    case 1:
+//                        return new JapaneseNamesFragment();
+//                    case 2:
+//                        return new FavouritesFragment();
+                    default:
+                        return new CategoriesListFragment();
+                }
+            }
+
+            @Override
+            public int getCount() {
+                return 3;
+            }
+        });
+        return pager;
     }
 
 
