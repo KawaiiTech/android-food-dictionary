@@ -1,8 +1,10 @@
 package com.miquelbeltran.japanesefooddictionary;
 
+import android.database.DataSetObserver;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -13,8 +15,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListAdapter;
+import android.widget.TextView;
 
 import java.io.IOException;
+import java.util.List;
 
 
 /**
@@ -77,8 +81,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
             e.printStackTrace();
         }
 
-        mAdapter = new ArrayAdapter<FoodDescription>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, foodDictionary.search(""));
+        mAdapter = new CustomArrayAdapter(getActivity(), foodDictionary.search(""));
     }
 
     @Override
@@ -117,8 +120,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
     }
 
     private void updateListWithSearch(String search) {
-        mAdapter = new ArrayAdapter<FoodDescription>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, foodDictionary.search(search));
+        mAdapter = new CustomArrayAdapter(getActivity(), foodDictionary.search(search));
         ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
     }
 
@@ -155,4 +157,82 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
         public void onFragmentInteraction(Uri uri);
     }
 
+    private class CustomArrayAdapter implements ListAdapter {
+        private final List<FoodDescription> itemList;
+        private final FragmentActivity activity;
+
+        public CustomArrayAdapter(FragmentActivity activity, List<FoodDescription> itemList) {
+            this.itemList = itemList;
+            this.activity = activity;
+        }
+
+        @Override
+        public boolean areAllItemsEnabled() {
+            return false;
+        }
+
+        @Override
+        public boolean isEnabled(int position) {
+            return false;
+        }
+
+        @Override
+        public void registerDataSetObserver(DataSetObserver observer) {
+
+        }
+
+        @Override
+        public void unregisterDataSetObserver(DataSetObserver observer) {
+
+        }
+
+        @Override
+        public int getCount() {
+            return itemList.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return itemList.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return itemList.get(position).hashCode();
+        }
+
+        @Override
+        public boolean hasStableIds() {
+            return false;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null) {
+                convertView = activity.getLayoutInflater().inflate(R.layout.food_item, null);
+            }
+            TextView textView = (TextView) convertView.findViewById(R.id.japaneseTextView);
+            textView.setText(itemList.get(position).japanese);
+            textView = (TextView) convertView.findViewById(R.id.englishTextView);
+            textView.setText(itemList.get(position).english);
+            textView = (TextView) convertView.findViewById(R.id.pronunciationTextView);
+            textView.setText(itemList.get(position).pronunciation);
+            return convertView;
+        }
+
+        @Override
+        public int getItemViewType(int position) {
+            return 0;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+            return 1;
+        }
+
+        @Override
+        public boolean isEmpty() {
+            return false;
+        }
+    }
 }

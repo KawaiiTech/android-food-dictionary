@@ -83,10 +83,14 @@ public class CategoriesExpandableListAdapter implements ExpandableListAdapter {
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = activity.getLayoutInflater().inflate(simple_list_item_1, null);
+            convertView = activity.getLayoutInflater().inflate(R.layout.food_item, null);
         }
-        TextView textView = (TextView) convertView.findViewById(text1);
-        textView.setText(categories.get(groupPosition).getFoodDescriptionList().get(childPosition).toString());
+        TextView textView = (TextView) convertView.findViewById(R.id.japaneseTextView);
+        textView.setText(categories.get(groupPosition).getFoodDescriptionList().get(childPosition).japanese);
+        textView = (TextView) convertView.findViewById(R.id.englishTextView);
+        textView.setText(categories.get(groupPosition).getFoodDescriptionList().get(childPosition).english);
+        textView = (TextView) convertView.findViewById(R.id.pronunciationTextView);
+        textView.setText(categories.get(groupPosition).getFoodDescriptionList().get(childPosition).pronunciation);
         return convertView;
     }
 
