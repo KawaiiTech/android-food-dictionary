@@ -56,10 +56,52 @@
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Toppings",
+        "english": "pickled plum",
+        "japanese": "梅干",
+        "pronunciation": "umeboshi"
+    },
+
+    {
+        "category": "Toppings",
+        "english": "pickled vegetables",
+        "japanese": "漬物",
+        "pronunciation": "tsukemono"
+    },
+
+    {
+        "category": "Rice",
+        "english": "omelette with fried rice and ketchup",
+        "japanese": "オムライス",
+        "pronunciation": "omuraisu"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice balls",
+        "japanese": "お握り",
+        "pronunciation": "onigiri"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice with red beans",
+        "japanese": "赤飯",
+        "pronunciation": "sekihan"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice seasoned with soup and soy sauce",
+        "japanese": "炊き込みご飯",
+        "pronunciation": "takikomigohan"
+    },
+
+    {
+        "category": "Toppings",
+        "english": "bonito flakes",
+        "japanese": "鰹節",
+        "pronunciation": "katsuobushi"
     },
 
     {
@@ -89,13 +131,5 @@
         "japanese": "",
         "pronunciation": ""
     },
-
-    {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
-    },
-
 ] 
 
