@@ -3,23 +3,17 @@
         "category": "Rice",
         "english": "white rice",
         "kanji": "白米",
-        "kunyomi": [
+        "pronunciation": [
         	"はくまい"
-        ],
-        "onyomi": [
-            ""
         ]
     },
 
     {
-        "category": "topings",
+        "category": "toppings",
         "english": "seaweed",
         "kanji": "海苔",
-        "kunyomi": [
+        "pronunciation": [
             "のり"
-        ],
-        "onyomi": [
-            ""
         ]
     },
 
@@ -27,158 +21,10 @@
         "category": "",
         "english": "",
         "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
+        "pronunciation": [
             ""
         ]
     },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
-    {
-        "category": "",
-        "english": "",
-        "kanji": "",
-        "kunyomi": [
-            ""
-        ],
-        "onyomi": [
-            ""
-        ]
-    },
-
 
 
 ] 
