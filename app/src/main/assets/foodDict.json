@@ -3,47 +3,64 @@
         "category": "Rice",
         "english": "white rice",
         "japanese": "白米",
-        "pronunciation": [
-        	"hakumai"
-        ]
+        "pronunciation": "hakumai"
     },
 
     {
         "category": "Toppings",
         "english": "seaweed",
         "japanese": "海苔",
-        "pronunciation": [
-            "nori"
-        ]
+        "pronunciation": "nori"
     },
 
     {
         "category": "Rice",
         "english": "curry rice",
         "japanese": "カレーライス",
-        "pronunciation": [
-            ""
-        ]
+        "pronunciation": ""
     },
 
     {
         "category": "",
         "english": "",
         "japanese": "",
-        "pronunciation": [
-            ""
-        ]
+        "pronunciation": ""
     },
 
     {
         "category": "",
         "english": "",
-        "kanji": "",
-        "pronunciation": [
-            ""
-        ]
+        "japanese": "",
+        "pronunciation": ""
     },
 
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
 
 ] 
 
