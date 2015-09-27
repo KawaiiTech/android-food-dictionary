@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Food in Japanese"
+        android:id="@+id/japaneseTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="left|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pronunciation"
+        android:id="@+id/pronunciationTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/japaneseTextView"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignEnd="@+id/englishTextView"
+        android:gravity="left|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name in English"
+        android:id="@+id/englishTextView"
+        android:gravity="right|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/japaneseTextView"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_above="@+id/pronunciationTextView" />
+
+</RelativeLayout>
