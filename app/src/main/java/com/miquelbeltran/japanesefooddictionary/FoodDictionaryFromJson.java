@@ -81,6 +81,9 @@ public class FoodDictionaryFromJson implements FoodDictionary {
         reader.beginArray();
         while (reader.hasNext()) {
             FoodDescription food = readFood(reader);
+            if (food == null) {
+                continue;
+            }
             foodDescriptionList.add(food);
             FoodCategory foodCategory = getCategory(food.category);
             if (foodCategory == null) {
@@ -126,6 +129,9 @@ public class FoodDictionaryFromJson implements FoodDictionary {
             }
         }
         reader.endObject();
+        if (category.equals("") || english.equals("") || japanese.equals("")) {
+            return null;
+        }
         return new FoodDescription(category, english, japanese, pronunciation);
     }
 }
