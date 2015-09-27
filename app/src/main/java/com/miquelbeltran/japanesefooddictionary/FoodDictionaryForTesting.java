@@ -19,6 +19,22 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         FoodDescription mochi = new FoodDescription();
         categorySweets.addFoodDescription(mochi);
         foodCategories.add(categorySweets);
+
+        FoodCategory categoryNoodles = new FoodCategory("Noodles");
+        foodCategories.add(categoryNoodles);
+
+        FoodCategory categoryBread = new FoodCategory("Bread");
+        foodCategories.add(categoryBread);
+
+        FoodCategory categorySoftDrinks = new FoodCategory("Soft Drinks");
+        foodCategories.add(categorySoftDrinks);
+
+        FoodCategory categoryTea = new FoodCategory("Tea");
+        foodCategories.add(categoryTea);
+
+        FoodCategory categorySake = new FoodCategory("Sake");
+        foodCategories.add(categorySake);
+
         return foodCategories;
     }
 
