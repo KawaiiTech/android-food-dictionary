@@ -14,6 +14,11 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         FoodDescription whiteRice = new FoodDescription();
         categoryRice.addFoodDescription(whiteRice);
         foodCategories.add(categoryRice);
+
+        FoodCategory categorySweets = new FoodCategory("Sweets");
+        FoodDescription mochi = new FoodDescription();
+        categorySweets.addFoodDescription(mochi);
+        foodCategories.add(categorySweets);
         return foodCategories;
     }
 
