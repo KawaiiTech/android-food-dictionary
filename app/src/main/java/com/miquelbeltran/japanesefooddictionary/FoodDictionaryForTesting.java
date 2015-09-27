@@ -13,11 +13,11 @@ public class FoodDictionaryForTesting implements FoodDictionary {
 
         FoodCategory categorySweets = new FoodCategory("Sweets");
         foodCategories.add(categorySweets);
-        FoodDescription mochi = new FoodDescription("Mochi rice cake", "餅");
+        FoodDescription mochi = new FoodDescription("Sweets", "Mochi rice cake", "餅", "");
         categorySweets.addFoodDescription(mochi);
 
         FoodCategory categoryRice = new FoodCategory("Rice");
-        FoodDescription whiteRice = new FoodDescription("White rice", "白米");
+        FoodDescription whiteRice = new FoodDescription("", "White rice", "白米", "");
         categoryRice.addFoodDescription(whiteRice);
         foodCategories.add(categoryRice);
 
@@ -25,7 +25,7 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         foodCategories.add(categoryNoodles);
 
         FoodCategory categoryBread = new FoodCategory("Bread");
-        FoodDescription melonpan = new FoodDescription("Melonpan sweet bun", "メロンパン");
+        FoodDescription melonpan = new FoodDescription("Bread", "Melonpan sweet bun", "メロンパン", "");
         categoryBread.addFoodDescription(melonpan);
         foodCategories.add(categoryBread);
 
@@ -53,12 +53,12 @@ public class FoodDictionaryForTesting implements FoodDictionary {
     @Override
     public List<FoodDescription> search(String searchTerm) {
         List<FoodDescription> foodDescriptionList = new ArrayList<FoodDescription>();
-        foodDescriptionList.add(new FoodDescription("mochi", "餅"));
+        foodDescriptionList.add(new FoodDescription("Sweet", "mochi", "餅", ""));
         if (searchTerm.equals("mo"))
             return foodDescriptionList;
-        foodDescriptionList.add(new FoodDescription("white rice", "白米"));
-        foodDescriptionList.add(new FoodDescription("melonpan", "メロンパン"));
-        foodDescriptionList.add(new FoodDescription("tolo", "pom"));
+        foodDescriptionList.add(new FoodDescription("Rice", "white rice", "白米", ""));
+        foodDescriptionList.add(new FoodDescription("Bread", "melonpan", "メロンパン", ""));
+        foodDescriptionList.add(new FoodDescription("Bar", "tolo", "pom", ""));
         return foodDescriptionList;
     }
 }

@@ -14,6 +14,8 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 
+import java.io.IOException;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -38,6 +40,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
     private ListAdapter mAdapter;
     private AbsListView mListView;
     private EditText mSearchField;
+    private FoodDictionaryFromJson foodDictionary = new FoodDictionaryFromJson();
 
     /**
      * Use this factory method to create a new instance of
@@ -68,9 +71,14 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        try {
+            foodDictionary.loadDictionary(getContext(), "foodDict.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         mAdapter = new ArrayAdapter<FoodDescription>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().search(""));
+                android.R.layout.simple_list_item_1, android.R.id.text1, foodDictionary.search(""));
     }
 
     @Override
@@ -110,7 +118,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
 
     private void updateListWithSearch(String search) {
         mAdapter = new ArrayAdapter<FoodDescription>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().search(search));
+                android.R.layout.simple_list_item_1, android.R.id.text1, foodDictionary.search(""));
         ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
     }
 

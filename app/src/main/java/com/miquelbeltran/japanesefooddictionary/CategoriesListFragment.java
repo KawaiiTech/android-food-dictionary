@@ -16,6 +16,8 @@ import android.widget.TextView;
 
 import com.miquelbeltran.japanesefooddictionary.dummy.DummyContent;
 
+import java.io.IOException;
+
 /**
  * A fragment representing a list of Items.
  * <p/>
@@ -75,11 +77,14 @@ public class CategoriesListFragment extends Fragment implements AbsListView.OnIt
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        mAdapter = new CategoriesExpandableListAdapter(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().getCategories());
-
-                //= new ArrayAdapter<FoodCategory>(getActivity(),
-                //android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().getCategories());
+        FoodDictionaryFromJson foodDictionary = new FoodDictionaryFromJson();
+        try {
+            foodDictionary.loadDictionary(getContext(), "foodDict.json");
+            mAdapter = new CategoriesExpandableListAdapter(getActivity(),
+                    android.R.layout.simple_list_item_1, android.R.id.text1, foodDictionary.getCategories());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
