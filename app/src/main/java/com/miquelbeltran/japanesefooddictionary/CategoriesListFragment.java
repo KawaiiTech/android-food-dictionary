@@ -73,9 +73,8 @@ public class CategoriesListFragment extends Fragment implements AbsListView.OnIt
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        // TODO: Change Adapter to display your content
-        mAdapter = new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS);
+        mAdapter = new ArrayAdapter<FoodCategory>(getActivity(),
+                android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().getCategories());
     }
 
     @Override

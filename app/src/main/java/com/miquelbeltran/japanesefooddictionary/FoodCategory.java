@@ -1,5 +1,6 @@
 package com.miquelbeltran.japanesefooddictionary;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,7 +8,7 @@ import java.util.List;
  */
 public class FoodCategory {
     public final String name;
-    private List<FoodDescription> foodDescriptionList;
+    private List<FoodDescription> foodDescriptionList = new ArrayList<FoodDescription>();
 
     public FoodCategory(String name) {
         this.name = name;
@@ -19,5 +20,10 @@ public class FoodCategory {
 
     public void addFoodDescription(FoodDescription foodDescription) {
         foodDescriptionList.add(foodDescription);
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
