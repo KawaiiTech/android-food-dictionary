@@ -140,31 +140,38 @@
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Rice",
+        "english": "donburi with chicken",
+        "japanese": "親子丼",
+        "pronunciation": "oyakodon"
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Beef",
+        "english": "kobe beef",
+        "japanese": "神戸ビーフ",
+        "pronunciation": "koobebiifu"
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Rice",
+        "english": "donburi with raw tuna sashimi",
+        "japanese": "鉄火丼",
+        "pronunciation": "tekkadon"
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Rice",
+        "english": "donburi with shrimp and vegetables tempura",
+        "japanese": "天丼",
+        "pronunciation": "tendon"
+    },
+
+    {
+        "category": "Rice",
+        "english": "donburi with broiled eel",
+        "japanese": "鰻丼",
+        "pronunciation": "unadon"
     },
 
     {
