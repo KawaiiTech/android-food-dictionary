@@ -53,8 +53,8 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         foodDescriptionList.add(new FoodDescription("mochi", "餅"));
         if (searchTerm.equals("mo"))
             return foodDescriptionList;
-        foodDescriptionList.add(new FoodDescription("foo", "pim"));
-        foodDescriptionList.add(new FoodDescription("bar", "pam"));
+        foodDescriptionList.add(new FoodDescription("white rice", "白米"));
+        foodDescriptionList.add(new FoodDescription("melonpan", "メロンパン"));
         foodDescriptionList.add(new FoodDescription("tolo", "pom"));
         return foodDescriptionList;
     }
