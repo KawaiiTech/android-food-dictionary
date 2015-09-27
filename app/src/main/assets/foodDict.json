@@ -117,7 +117,7 @@
         "japanese": "丼",
         "pronunciation": "donburi"
     },
-    
+
     {
         "category": "Rice",
         "english": "donburi with beef",
@@ -125,6 +125,19 @@
         "pronunciation": "gyuudon"
     },
 
+    {
+        "category": "deep-fried",
+        "english": "deep-fried cutlet of pork",
+        "japanese": "豚カツ",
+        "pronunciation": "tonkatsu"
+    },
+
+    {
+        "category": "Rice",
+        "english": "donburi with miso and meat",
+        "japanese": "味噌カツ丼",
+        "pronunciation": "misokatsudon"
+    },
 
     {
         "category": "",
@@ -132,5 +145,34 @@
         "japanese": "",
         "pronunciation": ""
     },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
 ] 
 
