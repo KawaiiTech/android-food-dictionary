@@ -105,25 +105,26 @@
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Rice",
+        "english": "rice with raw egg",
+        "japanese": "卵かけご飯",
+        "pronunciation": "tamagokakegohan"
     },
 
     {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
+        "category": "Rice",
+        "english": "rice bowl",
+        "japanese": "丼",
+        "pronunciation": "donburi"
+    },
+    
+    {
+        "category": "Rice",
+        "english": "donburi with beef",
+        "japanese": "牛丼",
+        "pronunciation": "gyuudon"
     },
 
-    {
-        "category": "",
-        "english": "",
-        "japanese": "",
-        "pronunciation": ""
-    },
 
     {
         "category": "",
