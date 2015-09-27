@@ -2,18 +2,36 @@
     {
         "category": "Rice",
         "english": "white rice",
-        "kanji": "白米",
+        "japanese": "白米",
         "pronunciation": [
-        	"はくまい"
+        	"hakumai"
         ]
     },
 
     {
-        "category": "toppings",
+        "category": "Toppings",
         "english": "seaweed",
-        "kanji": "海苔",
+        "japanese": "海苔",
         "pronunciation": [
-            "のり"
+            "nori"
+        ]
+    },
+
+    {
+        "category": "Rice",
+        "english": "curry rice",
+        "japanese": "カレーライス",
+        "pronunciation": [
+            ""
+        ]
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": [
+            ""
         ]
     },
 
