@@ -24,7 +24,7 @@ public class FoodCategory {
             return R.drawable.icon_cat_topping;
         }
         if (name.equals("Deep-fried")) {
-            return R.mipmap.ic_launcher;
+            return R.drawable.icon_cat_fried;
         }
         if (name.equals("Beef")) {
             return R.drawable.icon_cat_beef;
