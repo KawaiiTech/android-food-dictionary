@@ -6,6 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 
 
 /**
@@ -16,7 +20,7 @@ import android.view.ViewGroup;
  * Use the {@link FoodListFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FoodListFragment extends Fragment {
+public class FoodListFragment extends Fragment implements AdapterView.OnItemClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -27,6 +31,9 @@ public class FoodListFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    private ListAdapter mAdapter;
+    private AbsListView mListView;
 
     /**
      * Use this factory method to create a new instance of
@@ -57,13 +64,26 @@ public class FoodListFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        mAdapter = new ArrayAdapter<FoodDescription>(getActivity(),
+                android.R.layout.simple_list_item_1, android.R.id.text1, new FoodDictionaryForTesting().search("test"));
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_food_list, container, false);
+
+        // Set the adapter
+        mListView = (AbsListView) view.findViewById(R.id.listView);
+        ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
+
+        // Set OnItemClickListener so we can be notified on item clicks
+        mListView.setOnItemClickListener(this);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_food_list, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -77,6 +97,11 @@ public class FoodListFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        // TODO
     }
 
     /**
