@@ -39,8 +39,8 @@ public class MainActivity extends FragmentActivity {
         };
 
         // Add tabs, specifying the tab's text and TabListener
-        addTab("English", actionBar, tabListener);
-        addTab("Japanese", actionBar, tabListener);
+        addTab("Categories", actionBar, tabListener);
+        addTab("Search", actionBar, tabListener);
         addTab("Favourites", actionBar, tabListener);
         pager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
@@ -66,8 +66,8 @@ public class MainActivity extends FragmentActivity {
                 switch (position) {
                     case 0:
                         return new CategoriesListFragment();
-//                    case 1:
-//                        return new JapaneseNamesFragment();
+                    case 1:
+                        return new FoodListFragment();
 //                    case 2:
 //                        return new FavouritesFragment();
                     default:
