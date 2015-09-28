@@ -12,10 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.TextView;
+
+import com.miquelbeltran.japanesefooddictionary.data.CategoryIcons;
+import com.miquelbeltran.japanesefooddictionary.data.FoodDescription;
+import com.miquelbeltran.japanesefooddictionary.data.FoodDictionaryFromJson;
 
 import java.io.IOException;
 import java.util.List;
@@ -34,6 +37,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final String ICON_DICTIONARY_ASSET = "iconIDdict.json";
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -44,7 +48,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
     private ListAdapter mAdapter;
     private AbsListView mListView;
     private EditText mSearchField;
-    private FoodDictionaryFromJson foodDictionary = new FoodDictionaryFromJson();
+    private FoodDictionaryFromJson foodDictionary;
 
     /**
      * Use this factory method to create a new instance of
@@ -65,7 +69,7 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
     }
 
     public FoodListFragment() {
-        // Required empty public constructor
+
     }
 
     @Override
@@ -76,6 +80,9 @@ public class FoodListFragment extends Fragment implements AdapterView.OnItemClic
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         try {
+            CategoryIcons categoryIcons = new CategoryIcons();
+            categoryIcons.loadDictionary(getContext(), ICON_DICTIONARY_ASSET);
+            foodDictionary = new FoodDictionaryFromJson(categoryIcons);
             foodDictionary.loadDictionary(getContext(), "foodDict.json");
         } catch (IOException e) {
             e.printStackTrace();

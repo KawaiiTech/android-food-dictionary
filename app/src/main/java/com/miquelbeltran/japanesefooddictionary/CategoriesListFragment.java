@@ -1,6 +1,5 @@
 package com.miquelbeltran.japanesefooddictionary;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,12 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 
+import com.miquelbeltran.japanesefooddictionary.data.CategoryIcons;
+import com.miquelbeltran.japanesefooddictionary.data.FoodDictionaryFromJson;
 import com.miquelbeltran.japanesefooddictionary.dummy.DummyContent;
 
 import java.io.IOException;
@@ -33,6 +32,7 @@ public class CategoriesListFragment extends Fragment implements AbsListView.OnIt
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final String ICON_DICTIONARY_ASSET = "iconIDdict.json";
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -77,8 +77,10 @@ public class CategoriesListFragment extends Fragment implements AbsListView.OnIt
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        FoodDictionaryFromJson foodDictionary = new FoodDictionaryFromJson();
         try {
+            CategoryIcons categoryIcons = new CategoryIcons();
+            categoryIcons.loadDictionary(getContext(), ICON_DICTIONARY_ASSET);
+            FoodDictionaryFromJson foodDictionary = new FoodDictionaryFromJson(categoryIcons);
             foodDictionary.loadDictionary(getContext(), "foodDict.json");
             mAdapter = new CategoriesExpandableListAdapter(getActivity(),
                     android.R.layout.simple_list_item_1, android.R.id.text1, foodDictionary.getCategories());

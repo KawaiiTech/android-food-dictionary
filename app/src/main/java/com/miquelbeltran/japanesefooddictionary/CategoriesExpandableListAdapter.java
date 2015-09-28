@@ -8,6 +8,8 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.miquelbeltran.japanesefooddictionary.data.FoodCategory;
+
 import java.util.List;
 
 /**

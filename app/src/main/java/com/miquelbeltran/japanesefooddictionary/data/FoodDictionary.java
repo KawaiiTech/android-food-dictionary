@@ -1,4 +1,4 @@
-package com.miquelbeltran.japanesefooddictionary;
+package com.miquelbeltran.japanesefooddictionary.data;
 
 import java.util.List;
 

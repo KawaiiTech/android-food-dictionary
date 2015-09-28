@@ -1,9 +1,8 @@
-package com.miquelbeltran.japanesefooddictionary;
+package com.miquelbeltran.japanesefooddictionary.data;
 
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.util.JsonReader;
-import android.util.JsonToken;
 import android.util.Log;
 
 import java.io.IOException;
@@ -20,8 +19,10 @@ import java.util.List;
 public class FoodDictionaryFromJson implements FoodDictionary {
     private List<FoodDescription> foodDescriptionList = new ArrayList<FoodDescription>();
     private List<FoodCategory> foodCategories = new ArrayList<FoodCategory>();
+    private final CategoryIcons categoryIcons;
 
-    public FoodDictionaryFromJson() {
+    public FoodDictionaryFromJson(CategoryIcons categoryIcons) {
+        this.categoryIcons = categoryIcons;
     }
 
     public void loadDictionary(Context context, String dictionaryFileName) throws IOException {
@@ -87,7 +88,7 @@ public class FoodDictionaryFromJson implements FoodDictionary {
             foodDescriptionList.add(food);
             FoodCategory foodCategory = getCategory(food.category);
             if (foodCategory == null) {
-                foodCategory = new FoodCategory(food.category);
+                foodCategory = new FoodCategory(food.category, categoryIcons.getIconForCategory(food.category));
                 foodCategory.addFoodDescription(food);
                 foodCategories.add(foodCategory);
             } else {
