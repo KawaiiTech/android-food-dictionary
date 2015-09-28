@@ -25,17 +25,32 @@
     },
 
     {
-    	"category": "", 
-    	"iconId": "icon_cat_"
+    	"category": "Grilled or Pan fried", 
+    	"iconId": "icon_cat_grilledpan"
     },
 
     {
-    	"category": "", 
-    	"iconId": "icon_cat_"
+    	"category": "Toppings", 
+    	"iconId": "icon_cat_toppings"
     },
 
     {
-    	"category": "", 
-    	"iconId": "icon_cat_"
+    	"category": "Soft Drinks", 
+    	"iconId": "icon_cat_softdrinks"
+    },
+
+    {
+    	"category": "Tea", 
+    	"iconId": "icon_cat_tea"
+    },
+
+    {
+    	"category": "Sake", 
+    	"iconId": "icon_cat_sake"
+    },
+
+    {
+    	"category": "Sushi", 
+    	"iconId": "icon_cat_sushi"
     }
 ]
