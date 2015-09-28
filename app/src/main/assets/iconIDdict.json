@@ -1,0 +1,41 @@
+[
+    {
+        "category": "Sweets",
+        "iconId": "icon_cat_sweets"
+    },
+
+    {
+    	"category": "Rice", 
+    	"iconId": "icon_cat_rice"
+    },
+
+    {
+    	"category": "Noodles", 
+    	"iconId": "icon_cat_noodles"
+    },
+
+    {
+    	"category": "Bread", 
+    	"iconId": "icon_cat_bread"
+    },
+
+    {
+    	"category": "Deep-fried", 
+    	"iconId": "icon_cat_deepfried"
+    },
+
+    {
+    	"category": "", 
+    	"iconId": "icon_cat_"
+    },
+
+    {
+    	"category": "", 
+    	"iconId": "icon_cat_"
+    },
+
+    {
+    	"category": "", 
+    	"iconId": "icon_cat_"
+    }
+]
