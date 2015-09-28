@@ -47,7 +47,7 @@ public class FoodDictionaryForTesting implements FoodDictionary {
         FoodCategory categorySake = new FoodCategory("Sake");
         foodCategories.add(categorySake);
 
-        FoodCategory categorySake = new FoodCategory("Sushi");
+        FoodCategory categorySushi = new FoodCategory("Sushi");
         foodCategories.add(categorySushi);
 
         return foodCategories;
