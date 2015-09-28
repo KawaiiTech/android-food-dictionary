@@ -21,7 +21,7 @@
 
     {
     	"category": "Deep-fried", 
-    	"iconId": "icon_cat_deepfried"
+    	"iconId": "icon_cat_fried"
     },
 
     {
@@ -52,5 +52,36 @@
     {
     	"category": "Sushi", 
     	"iconId": "icon_cat_sushi"
+    },
+
+    {
+    	"category": "Beef", 
+    	"iconId": "icon_cat_beef"
+    },
+
+    {
+    	"category": "Pork", 
+    	"iconId": "icon_cat_pork"
+    },
+
+    {
+    	"category": "Chicken", 
+    	"iconId": "icon_cat_chicken"
+    },
+
+    {
+    	"category": "Fish", 
+    	"iconId": "icon_cat_fish"
+    },
+
+    {
+    	"category": "Vegetables", 
+    	"iconId": "icon_cat_vegetables"
+    },
+
+    {
+    	"category": "Pizza", 
+    	"iconId": "icon_cat_pizza"
     }
+
 ]
