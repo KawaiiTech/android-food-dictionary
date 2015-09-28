@@ -55,12 +55,11 @@ public class CategoryIcons {
             mapCategoryIcons.put(categoryIcon.getKey(), categoryIcon.getValue());
         }
         reader.endArray();
-        return;
     }
 
     private Map.Entry<String, Integer> readCategoryIcon(JsonReader reader) throws IOException {
         String category = "";
-        String iconId = "";;
+        String iconId = "";
         reader.beginObject();
         while (reader.hasNext()) {
             String name = reader.nextName();
@@ -73,7 +72,7 @@ public class CategoryIcons {
             }
         }
         reader.endObject();
-        Integer iconIdValue = context.getResources().getIdentifier(iconId, "drawable", "com.miquelbeltran.japanesefooddictionary");;
+        Integer iconIdValue = context.getResources().getIdentifier(iconId, "drawable", "com.miquelbeltran.japanesefooddictionary");
         return new AbstractMap.SimpleImmutableEntry<String, Integer>(category, iconIdValue);
     }
 }
