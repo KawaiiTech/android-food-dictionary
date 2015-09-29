@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Japanese Food Dictionary</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_about_us">About Us</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

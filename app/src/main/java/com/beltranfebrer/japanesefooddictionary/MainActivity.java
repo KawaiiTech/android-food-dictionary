@@ -1,6 +1,7 @@
 package com.beltranfebrer.japanesefooddictionary;
 
 import android.app.ActionBar;
+import android.app.AlertDialog;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -99,7 +100,12 @@ public class MainActivity extends FragmentActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about_us) {
+            new AlertDialog.Builder(this)
+                    .setTitle("About Us")
+                    .setMessage("This application has been developed by Lara Martin and Miquel Beltran.")
+                    .setIcon(android.R.drawable.ic_dialog_info)
+                    .show();
             return true;
         }
 
