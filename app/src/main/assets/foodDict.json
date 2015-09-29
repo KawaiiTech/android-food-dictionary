@@ -126,7 +126,7 @@
     },
 
     {
-        "category": "Deep-fried",
+        "category": "Pork",
         "english": "deep-fried cutlet of pork",
         "japanese": "豚カツ",
         "pronunciation": "tonkatsu"
@@ -259,70 +259,70 @@
     },
 
     {
-        "category": "Deep-fried",
-        "english": "croquette of mashed potato with fillings",
+        "category": "Vegetables",
+        "english": "deep-friedcroquette of mashed potato with fillings",
         "japanese": "コロッケ",
         "pronunciation": "korokke"
     },
 
     {
-        "category": "Deep-fried",
-        "english": "skewered and breaded meat, vegetables or seafood",
+        "category": "Fish-Seafood",
+        "english": "deep-fried skewered meat, vegetables or seafood",
         "japanese": "串カツ",
         "pronunciation": "kushikatsu"
     },
 
     {
-        "category": "Deep-fried",
-        "english": "tempura",
+        "category": "Fish-Seafood",
+        "english": "seafood fried in light batter",
         "japanese": "天ぷら",
         "pronunciation": "tenpura"
     },
 
     {
-        "category": "Deep-fried",
+        "category": "Vegetables",
         "english": "deep-fried tofu in hot broth",
         "japanese": "揚げ出し豆腐",
         "pronunciation": "agedashidofu"
     },
 
     {
-        "category": "Grilled or Pan fried",
+        "category": "Pork",
         "english": "dumplings filled with pork and veggies",
         "japanese": "餃子",
         "pronunciation": "gyoza"
     },
 
     {
-        "category": "Grilled or Pan fried",
-        "english": "savoury pancakes with meat and veggies",
+        "category": "Pizza",
+        "english": "savoury pancakes/pizza with meat and veggies",
         "japanese": "お好み焼き",
         "pronunciation": "okonomiyaki"
     },
 
     {
-        "category": "Grilled or Pan fried",
+        "category": "Fish-Seafood",
         "english": "dumplings filled with octopus",
         "japanese": "蛸焼き",
         "pronunciation": "takoyaki"
     },
 
     {
-        "category": "Grilled or Pan fried",
+        "category": "Fish-Seafood",
         "english": "grilled eel",
         "japanese": "鰻",
         "pronunciation": "unagi"
     },
 
     {
-        "category": "Grilled or Pan fried",
+        "category": "Chicken",
         "english": "barbecued chicken skewers",
         "japanese": "焼き鳥",
         "pronunciation": "yakitori"
     },
 
     {
-        "category": "Grilled or Pan fried",
+        "category": "Fish-Seafood",
         "english": "flame-grilled fish with daikon (radish)",
         "japanese": "焼き魚",
         "pronunciation": "yakizakana"
@@ -354,6 +354,48 @@
         "english": "fermented rice drink",
         "japanese": "甘酒",
         "pronunciation": "amazake"
+    },
+
+    {
+        "category": "Soft Drinks",
+        "english": "milky beverage",
+        "japanese": "カルピス",
+        "pronunciation": "karupisu"
+    },
+
+    {
+        "category": "Soft Drinks",
+        "english": "carbonated lemonade",
+        "japanese": "ラムネ",
+        "pronunciation": "ramune"
+    },
+
+    {
+        "category": "Alcoholic Drinks",
+        "english": "made from long grain indica rice",
+        "japanese": "泡盛",
+        "pronunciation": "awamori"
+    },
+
+    {
+        "category": "Alcoholic Drinks",
+        "english": "beer",
+        "japanese": "ビール",
+        "pronunciation": "biiru"
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
     },
 
     {

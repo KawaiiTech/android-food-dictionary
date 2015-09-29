@@ -1,7 +1,7 @@
 [
     {
         "category": "Sweets",
-        "iconId": "icon_cat_sweets"
+        "iconId": "icon_cat_sweet"
     },
 
     {
@@ -45,7 +45,7 @@
     },
 
     {
-    	"category": "Sake", 
+    	"category": "Alcoholic Drinks", 
     	"iconId": "icon_cat_sake"
     },
 
@@ -70,7 +70,7 @@
     },
 
     {
-    	"category": "Fish", 
+    	"category": "Fish-Seafood", 
     	"iconId": "icon_cat_fish"
     },
 
