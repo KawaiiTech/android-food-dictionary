@@ -175,35 +175,35 @@
     },
 
     {
-        "category": "Rice",
+        "category": "Sushi",
         "english": "sushi with ingredients on top of rice",
         "japanese": "握り寿司",
         "pronunciation": "nigirizushi"
     },
 
     {
-        "category": "Rice",
+        "category": "Sushi",
         "english": "roll sushi",
         "japanese": "巻き寿司",
         "pronunciation": "makizushi"
     },
 
     {
-        "category": "Rice",
+        "category": "Sushi",
         "english": "scattered sushi",
         "japanese": "ちらし寿司",
         "pronunciation": "chirashizushi"
     },
 
     {
-        "category": "Rice",
+        "category": "Sushi",
         "english": "fried tofu packet filled with rice",
         "japanese": "稲荷寿司",
         "pronunciation": "inarizushi"
     },
 
     {
-        "category": "Rice",
+        "category": "Sushi",
         "english": "rice wrapped in leafy pickle",
         "japanese": "押し寿司",
         "pronunciation": "meharizushi"
@@ -235,6 +235,118 @@
         "english": "cold soba with toppings",
         "japanese": "冷やし蕎麦",
         "pronunciation": "hiyashisoba"
+    },
+
+    {
+        "category": "Bread",
+        "english": "melonpan, sweet bun",
+        "japanese": "メロンパン",
+        "pronunciation": "meronpan"
+    },
+
+    {
+        "category": "Bread",
+        "english": "bread filled with curry",
+        "japanese": "カレーパン",
+        "pronunciation": "kareepan"
+    },
+
+    {
+        "category": "Bread",
+        "english": "sweet roll filled with red bean paste",
+        "japanese": "あんパン",
+        "pronunciation": "anpan"
+    },
+
+    {
+        "category": "Deep-fried",
+        "english": "croquette of mashed potato with fillings",
+        "japanese": "コロッケ",
+        "pronunciation": "korokke"
+    },
+
+    {
+        "category": "Deep-fried",
+        "english": "skewered and breaded meat, vegetables or seafood",
+        "japanese": "串カツ",
+        "pronunciation": "kushikatsu"
+    },
+
+    {
+        "category": "Deep-fried",
+        "english": "tempura",
+        "japanese": "天ぷら",
+        "pronunciation": "tenpura"
+    },
+
+    {
+        "category": "Deep-fried",
+        "english": "deep-fried tofu in hot broth",
+        "japanese": "揚げ出し豆腐",
+        "pronunciation": "agedashidofu"
+    },
+
+    {
+        "category": "Grilled or Pan fried",
+        "english": "dumplings filled with pork and veggies",
+        "japanese": "餃子",
+        "pronunciation": "gyoza"
+    },
+
+    {
+        "category": "Grilled or Pan fried",
+        "english": "savoury pancakes with meat and veggies",
+        "japanese": "お好み焼き",
+        "pronunciation": "okonomiyaki"
+    },
+
+    {
+        "category": "Grilled or Pan fried",
+        "english": "dumplings filled with octopus",
+        "japanese": "蛸焼き",
+        "pronunciation": "takoyaki"
+    },
+
+    {
+        "category": "Grilled or Pan fried",
+        "english": "grilled eel",
+        "japanese": "鰻",
+        "pronunciation": "unagi"
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
     },
 
     {
