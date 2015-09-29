@@ -1,6 +1,4 @@
-package com.miquelbeltran.japanesefooddictionary.data;
-
-import com.miquelbeltran.japanesefooddictionary.R;
+package com.beltranfebrer.japanesefooddictionary.data;
 
 import java.util.ArrayList;
 import java.util.List;

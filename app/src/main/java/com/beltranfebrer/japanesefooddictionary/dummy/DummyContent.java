@@ -1,4 +1,4 @@
-package com.miquelbeltran.japanesefooddictionary.dummy;
+package com.beltranfebrer.japanesefooddictionary.dummy;
 
 import java.util.ArrayList;
 import java.util.HashMap;

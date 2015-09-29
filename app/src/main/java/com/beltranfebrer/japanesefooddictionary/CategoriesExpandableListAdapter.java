@@ -1,4 +1,4 @@
-package com.miquelbeltran.japanesefooddictionary;
+package com.beltranfebrer.japanesefooddictionary;
 
 import android.database.DataSetObserver;
 import android.support.v4.app.FragmentActivity;
@@ -8,7 +8,7 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.miquelbeltran.japanesefooddictionary.data.FoodCategory;
+import com.beltranfebrer.japanesefooddictionary.data.FoodCategory;
 
 import java.util.List;
 

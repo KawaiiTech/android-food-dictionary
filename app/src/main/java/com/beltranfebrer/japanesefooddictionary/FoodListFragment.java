@@ -1,4 +1,4 @@
-package com.miquelbeltran.japanesefooddictionary;
+package com.beltranfebrer.japanesefooddictionary;
 
 import android.database.DataSetObserver;
 import android.net.Uri;
@@ -16,9 +16,9 @@ import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
-import com.miquelbeltran.japanesefooddictionary.data.CategoryIcons;
-import com.miquelbeltran.japanesefooddictionary.data.FoodDescription;
-import com.miquelbeltran.japanesefooddictionary.data.FoodDictionaryFromJson;
+import com.beltranfebrer.japanesefooddictionary.data.CategoryIcons;
+import com.beltranfebrer.japanesefooddictionary.data.FoodDescription;
+import com.beltranfebrer.japanesefooddictionary.data.FoodDictionaryFromJson;
 
 import java.io.IOException;
 import java.util.List;

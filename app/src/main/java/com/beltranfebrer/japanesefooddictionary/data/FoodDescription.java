@@ -1,4 +1,4 @@
-package com.miquelbeltran.japanesefooddictionary.data;
+package com.beltranfebrer.japanesefooddictionary.data;
 
 /**
  * Created by miquel on 9/27/2015.

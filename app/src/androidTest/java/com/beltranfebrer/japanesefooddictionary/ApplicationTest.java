@@ -1,12 +1,12 @@
-package com.miquelbeltran.japanesefooddictionary;
+package com.beltranfebrer.japanesefooddictionary;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
 
-import com.miquelbeltran.japanesefooddictionary.data.CategoryIcons;
-import com.miquelbeltran.japanesefooddictionary.data.FoodCategory;
-import com.miquelbeltran.japanesefooddictionary.data.FoodDescription;
-import com.miquelbeltran.japanesefooddictionary.data.FoodDictionaryFromJson;
+import com.beltranfebrer.japanesefooddictionary.data.CategoryIcons;
+import com.beltranfebrer.japanesefooddictionary.data.FoodCategory;
+import com.beltranfebrer.japanesefooddictionary.data.FoodDescription;
+import com.beltranfebrer.japanesefooddictionary.data.FoodDictionaryFromJson;
 
 import java.util.List;
 

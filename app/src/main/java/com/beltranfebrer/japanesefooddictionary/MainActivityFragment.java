@@ -1,4 +1,4 @@
-package com.miquelbeltran.japanesefooddictionary;
+package com.beltranfebrer.japanesefooddictionary;
 
 import android.app.Fragment;
 import android.os.Bundle;

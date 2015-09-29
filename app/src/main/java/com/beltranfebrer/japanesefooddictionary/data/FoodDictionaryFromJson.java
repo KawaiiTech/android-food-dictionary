@@ -1,4 +1,4 @@
-package com.miquelbeltran.japanesefooddictionary.data;
+package com.beltranfebrer.japanesefooddictionary.data;
 
 import android.content.Context;
 import android.content.res.AssetManager;

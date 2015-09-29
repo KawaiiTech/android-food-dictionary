@@ -1,11 +1,9 @@
-package com.miquelbeltran.japanesefooddictionary.data;
+package com.beltranfebrer.japanesefooddictionary.data;
 
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.util.JsonReader;
 import android.util.Log;
-
-import com.miquelbeltran.japanesefooddictionary.R;
 
 import java.io.IOException;
 import java.io.InputStream;

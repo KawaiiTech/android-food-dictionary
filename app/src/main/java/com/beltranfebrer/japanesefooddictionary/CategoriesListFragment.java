@@ -1,4 +1,4 @@
-package com.miquelbeltran.japanesefooddictionary;
+package com.beltranfebrer.japanesefooddictionary;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,9 +11,9 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
-import com.miquelbeltran.japanesefooddictionary.data.CategoryIcons;
-import com.miquelbeltran.japanesefooddictionary.data.FoodDictionaryFromJson;
-import com.miquelbeltran.japanesefooddictionary.dummy.DummyContent;
+import com.beltranfebrer.japanesefooddictionary.data.CategoryIcons;
+import com.beltranfebrer.japanesefooddictionary.data.FoodDictionaryFromJson;
+import com.beltranfebrer.japanesefooddictionary.dummy.DummyContent;
 
 import java.io.IOException;
 

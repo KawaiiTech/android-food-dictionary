@@ -1,9 +1,9 @@
-package com.miquelbeltran.japanesefooddictionary.dummy;
+package com.beltranfebrer.japanesefooddictionary.dummy;
 
-import com.miquelbeltran.japanesefooddictionary.R;
-import com.miquelbeltran.japanesefooddictionary.data.FoodCategory;
-import com.miquelbeltran.japanesefooddictionary.data.FoodDescription;
-import com.miquelbeltran.japanesefooddictionary.data.FoodDictionary;
+import com.beltranfebrer.japanesefooddictionary.R;
+import com.beltranfebrer.japanesefooddictionary.data.FoodCategory;
+import com.beltranfebrer.japanesefooddictionary.data.FoodDescription;
+import com.beltranfebrer.japanesefooddictionary.data.FoodDictionary;
 
 import java.util.ArrayList;
 import java.util.List;
