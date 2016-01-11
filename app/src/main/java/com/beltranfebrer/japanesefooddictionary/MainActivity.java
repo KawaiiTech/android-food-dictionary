@@ -11,20 +11,24 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity implements MainActivityView {
+
+    private MainActivityPresenter presenter;
+    ActionBar actionBar;
+    ActionBar.TabListener tabListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final ViewPager pager = setupComponents();
-        final ActionBar actionBar = getActionBar();
+        actionBar = getActionBar();
 
         // Specify that tabs should be displayed in the action bar.
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
         // Create a tab listener that is called when the user changes tabs.
-        ActionBar.TabListener tabListener = new ActionBar.TabListener() {
+        tabListener = new ActionBar.TabListener() {
             public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
                 // show the given tab
                 pager.setCurrentItem(tab.getPosition());
@@ -39,19 +43,16 @@ public class MainActivity extends FragmentActivity {
             }
         };
 
-        // Add tabs, specifying the tab's text and TabListener
-        addTab("Categories", actionBar, tabListener);
-        addTab("Search", actionBar, tabListener);
-        //TODO: addTab("Favourites", actionBar, tabListener);
         pager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
             public void onPageSelected(int position) {
                 actionBar.setSelectedNavigationItem(position);
             }
         });
+        presenter = new MainActivityPresenter(this);
     }
 
-    private void addTab(String favourites, ActionBar actionBar, ActionBar.TabListener tabListener) {
+    public void addTab(String favourites) {
         actionBar.addTab(
                 actionBar.newTab()
                         .setText(favourites)
@@ -97,18 +98,18 @@ public class MainActivity extends FragmentActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_about_us) {
-            new AlertDialog.Builder(this)
-                    .setTitle("About Us")
-                    .setMessage("This application has been developed by Lara Martin and Miquel Beltran.")
-                    .setIcon(android.R.drawable.ic_dialog_info)
-                    .show();
+        if(presenter.onOptionsItemSelected(item.getItemId())) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void showAboutUs() {
+        new AlertDialog.Builder(this)
+                .setTitle("About Us")
+                .setMessage("This application has been developed by Lara Martin and Miquel Beltran.")
+                .setIcon(android.R.drawable.ic_dialog_info)
+                .show();
     }
 }
