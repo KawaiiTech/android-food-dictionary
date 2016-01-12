@@ -8,9 +8,6 @@ public class MainActivityPresenter {
 
     public MainActivityPresenter(MainActivityView view) {
         this.view = view;
-        view.addTab(MainActivityView.FragmentId.Categories.toString());
-        view.addTab(MainActivityView.FragmentId.Search.toString());
-        //TODO: view.addTab("Favourites");
     }
 
     /**
@@ -47,5 +44,11 @@ public class MainActivityPresenter {
             default:
                 return MainActivityView.FragmentId.Categories;
         }
+    }
+
+    public void showTabs() {
+        view.addTab(MainActivityView.FragmentId.Categories.toString());
+        view.addTab(MainActivityView.FragmentId.Search.toString());
+        //TODO: view.addTab("Favourites");
     }
 }

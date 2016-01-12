@@ -33,8 +33,9 @@ public class MainActivityTest {
 
     @Test
     public void testAddTabs() throws Exception {
-        verify(mockView).addTab("Categories");
-        verify(mockView).addTab("Search");
+        presenter.showTabs();
+        verify(mockView, times(1)).addTab("Categories");
+        verify(mockView, times(1)).addTab("Search");
     }
 
     @Test

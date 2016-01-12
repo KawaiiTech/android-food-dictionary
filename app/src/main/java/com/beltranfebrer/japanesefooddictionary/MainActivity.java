@@ -14,7 +14,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends FragmentActivity implements MainActivityView {
 
-    private MainActivityPresenter presenter;
+    private MainActivityPresenter presenter = new MainActivityPresenter(this);;
+
     ActionBar actionBar;
     ActionBar.TabListener tabListener;
 
@@ -22,8 +23,9 @@ public class MainActivity extends FragmentActivity implements MainActivityView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final ViewPager pager = setupComponents();
         actionBar = getActionBar();
+
+        final ViewPager pager = setupComponents();
 
         // Specify that tabs should be displayed in the action bar.
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -50,7 +52,7 @@ public class MainActivity extends FragmentActivity implements MainActivityView {
                 actionBar.setSelectedNavigationItem(position);
             }
         });
-        presenter = new MainActivityPresenter(this);
+        presenter.showTabs();
     }
 
     public void addTab(String favourites) {
