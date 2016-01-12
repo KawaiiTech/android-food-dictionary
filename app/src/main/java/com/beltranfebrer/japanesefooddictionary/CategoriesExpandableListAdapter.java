@@ -81,7 +81,8 @@ public class CategoriesExpandableListAdapter implements ExpandableListAdapter {
         TextView textView = (TextView) convertView.findViewById(R.id.catTextView);
         textView.setText(categories.get(groupPosition).toString());
         ImageView imageView = (ImageView) convertView.findViewById(R.id.catImageView);
-        imageView.setImageResource(categories.get(groupPosition).icon_res);
+        Integer iconIdValue = activity.getResources().getIdentifier(categories.get(groupPosition).iconRes, "drawable", "com.miquelbeltran.japanesefooddictionary");
+        imageView.setImageResource(iconIdValue);
         return convertView;
     }
 

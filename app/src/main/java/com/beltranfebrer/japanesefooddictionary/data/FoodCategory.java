@@ -8,12 +8,12 @@ import java.util.List;
  */
 public class FoodCategory {
     public final String name;
-    public final int icon_res;
+    public final String iconRes;
     private List<FoodDescription> foodDescriptionList = new ArrayList<FoodDescription>();
 
-    public FoodCategory(String name, int icon_res) {
+    public FoodCategory(String name, String iconRes) {
         this.name = name;
-        this.icon_res = icon_res;
+        this.iconRes = iconRes;
     }
 
     public final List<FoodDescription> getFoodDescriptionList() {

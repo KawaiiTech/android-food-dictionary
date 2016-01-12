@@ -16,25 +16,23 @@ import java.util.Map;
  * Created by Lara on 28/09/2015.
  */
 public class CategoryIcons {
-    private Map<String, Integer> mapCategoryIcons;
-    private Context context;
+    private Map<String, String> mapCategoryIcons;
 
     public CategoryIcons() {
         mapCategoryIcons = new HashMap();
     }
 
-    public int getIconForCategory(String name) {
+    public String getIconForCategory(String name) {
         return mapCategoryIcons.get(name);
     }
 
     public void loadDictionary(Context context, String dictionaryFileName) throws IOException {
-        this.context = context;
         AssetManager am = context.getAssets();
         InputStream is = am.open(dictionaryFileName);
         readJsonStream(is);
     }
 
-    private void readJsonStream(InputStream in) throws IOException {
+    public void readJsonStream(InputStream in) throws IOException {
         JsonReader reader = new JsonReader(new InputStreamReader(in, "UTF-8"));
         try {
             readCategoryIcons(reader);
@@ -49,13 +47,13 @@ public class CategoryIcons {
     private void readCategoryIcons(JsonReader reader) throws IOException {
         reader.beginArray();
         while (reader.hasNext()) {
-            Map.Entry<String, Integer> categoryIcon = readCategoryIcon(reader);
+            Map.Entry<String, String> categoryIcon = readCategoryIcon(reader);
             mapCategoryIcons.put(categoryIcon.getKey(), categoryIcon.getValue());
         }
         reader.endArray();
     }
 
-    private Map.Entry<String, Integer> readCategoryIcon(JsonReader reader) throws IOException {
+    private Map.Entry<String, String> readCategoryIcon(JsonReader reader) throws IOException {
         String category = "";
         String iconId = "";
         reader.beginObject();
@@ -70,7 +68,6 @@ public class CategoryIcons {
             }
         }
         reader.endObject();
-        Integer iconIdValue = context.getResources().getIdentifier(iconId, "drawable", "com.miquelbeltran.japanesefooddictionary");
-        return new AbstractMap.SimpleImmutableEntry<String, Integer>(category, iconIdValue);
+        return new AbstractMap.SimpleImmutableEntry<String, String>(category, iconId);
     }
 }
