@@ -10,6 +10,7 @@
         android:id="@+id/japaneseTextView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:gravity="left|top" />
@@ -22,9 +23,11 @@
         android:id="@+id/pronunciationTextView"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:layout_alignEnd="@+id/englishTextView"
+        android:layout_alignRight="@+id/englishTextView"
         android:gravity="left|top"
         android:layout_below="@+id/japaneseTextView" />
 
@@ -37,7 +40,9 @@
         android:gravity="right|top"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_toEndOf="@+id/japaneseTextView"
+        android:layout_toRightOf="@+id/japaneseTextView"
         android:paddingRight="10dp"
         android:paddingLeft="10dp" />
 
