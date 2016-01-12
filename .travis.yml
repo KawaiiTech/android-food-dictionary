@@ -9,9 +9,8 @@ script:
         - ./gradlew build jacocoTestReport
 before_install:
         - chmod +x gradlew
-        - pip install codecov
 branches:
         only:
                 - master
 after_success:
-        - codecov
+        - bash <(curl -s https://codecov.io/bash)
