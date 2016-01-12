@@ -6,9 +6,12 @@ android:
                 - android-23
                 - extra-android-m2repository
 script:
-        - ./gradlew build
+        - ./gradlew build jacocoTestReport
 before_install:
         - chmod +x gradlew
+        - pip install codecov
 branches:
         only:
                 - master
+after_success:
+        - codecov
