@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -65,24 +66,27 @@ public class MainActivity extends FragmentActivity implements MainActivityView {
         pager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                switch (position) {
-                    case 0:
-                        return new CategoriesListFragment();
-                    case 1:
-                        return new FoodListFragment();
-//                    case 2:
-//                        return new FavouritesFragment();
-                    default:
-                        return new CategoriesListFragment();
-                }
+                return getFragment(position);
             }
 
             @Override
             public int getCount() {
-                return 3;
+                return presenter.getFragmentCount();
             }
         });
         return pager;
+    }
+
+    @NonNull
+    private Fragment getFragment(int position) {
+        switch(presenter.getFragmentId(position)) {
+            case Categories:
+                return new CategoriesListFragment();
+            case Search:
+                return new FoodListFragment();
+            default:
+                return new CategoriesListFragment();
+        }
     }
 
 

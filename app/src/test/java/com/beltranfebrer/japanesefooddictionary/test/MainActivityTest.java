@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 
+import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -34,6 +35,17 @@ public class MainActivityTest {
     public void testAddTabs() throws Exception {
         verify(mockView).addTab("Categories");
         verify(mockView).addTab("Search");
+    }
+
+    @Test
+    public void testFragmentsCount() throws Exception {
+        assertEquals(2, presenter.getFragmentCount());
+    }
+
+    @Test
+    public void testGetFragmentId() throws Exception {
+        assertEquals(MainActivityView.FragmentId.Categories, presenter.getFragmentId(0));
+        assertEquals(MainActivityView.FragmentId.Search, presenter.getFragmentId(1));
     }
 
     @Test
