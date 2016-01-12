@@ -1,12 +1,14 @@
 language: android
-before_install:
-        - chmod +x gradlew
 android:
         components:
+                - platform-tools
                 - build-tools-23.0.1
                 - android-23
-script:
-        - ./gradlew build
+                - extra-android-m2repository
+        script:
+                - ./gradlew build
+before_install:
+        - chmod +x gradlew
 branches:
         only:
                 - master
