@@ -62,7 +62,7 @@ public class CategoryIconsTest {
     }
 
     @Test
-    @Config(assetDir="src/main/assets")
+    @Config(assetDir="src/test/assets")
     public void testLoadDiccionary() throws Exception {
         categoryIcons.loadDictionary(RuntimeEnvironment.application, "iconIDdict.json");
         assertEquals("icon_cat_sweet", categoryIcons.getIconForCategory("Sweets"));

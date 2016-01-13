@@ -1,0 +1,92 @@
+[
+    {
+        "category": "Sweets",
+        "iconId": "icon_cat_sweet"
+    },
+
+    {
+    	"category": "Rice", 
+    	"iconId": "icon_cat_rice"
+    },
+
+    {
+    	"category": "Noodles", 
+    	"iconId": "icon_cat_noodles"
+    },
+
+    {
+    	"category": "Bread", 
+    	"iconId": "icon_cat_bread"
+    },
+
+    {
+    	"category": "Deep-fried", 
+    	"iconId": "icon_cat_fried"
+    },
+
+    {
+    	"category": "Grilled or Pan fried", 
+    	"iconId": "icon_cat_grilledpan"
+    },
+
+    {
+    	"category": "Toppings", 
+    	"iconId": "icon_cat_topping"
+    },
+
+    {
+    	"category": "Soft Drinks", 
+    	"iconId": "icon_cat_softdrink"
+    },
+
+    {
+    	"category": "Tea", 
+    	"iconId": "icon_cat_tea"
+    },
+
+    {
+    	"category": "Alcoholic Drinks", 
+    	"iconId": "icon_cat_sake"
+    },
+
+    {
+    	"category": "Sushi", 
+    	"iconId": "icon_cat_sushi"
+    },
+
+    {
+    	"category": "Beef", 
+    	"iconId": "icon_cat_beef"
+    },
+
+    {
+    	"category": "Pork", 
+    	"iconId": "icon_cat_pork"
+    },
+
+    {
+    	"category": "Chicken", 
+    	"iconId": "icon_cat_chicken"
+    },
+
+    {
+    	"category": "Fish-Seafood", 
+    	"iconId": "icon_cat_fish"
+    },
+
+    {
+    	"category": "Vegetables", 
+    	"iconId": "icon_cat_vegetables"
+    },
+
+    {
+    	"category": "Pizza", 
+    	"iconId": "icon_cat_pizza"
+    },
+
+    {
+        "category": "Snacks", 
+        "iconId": "icon_cat_snacks"
+    }
+
+]

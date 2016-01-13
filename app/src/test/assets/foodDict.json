@@ -1,0 +1,415 @@
+[
+    {
+        "category": "Rice",
+        "english": "white rice",
+        "japanese": "白米",
+        "pronunciation": "hakumai"
+    },
+
+    {
+        "category": "Toppings",
+        "english": "seaweed",
+        "japanese": "海苔",
+        "pronunciation": "nori"
+    },
+
+    {
+        "category": "Rice",
+        "english": "curry rice",
+        "japanese": "カレーライス",
+        "pronunciation": "kareeraisu"
+    },
+
+    {
+        "category": "Rice",
+        "english": "fried rice",
+        "japanese": "炒飯",
+        "pronunciation": "chaahan"
+    },
+
+    {
+        "category": "Rice",
+        "english": "brown rice",
+        "japanese": "玄米御飯",
+        "pronunciation": "genmaigohan"
+    },
+
+    {
+        "category": "Rice",
+        "english": "hashed beef rice or hayashi rice",
+        "japanese": "ハヤシライス",
+        "pronunciation": "hayashiraisu"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice cooked iron pot",
+        "japanese": "釜飯)",
+        "pronunciation": "kamameshi"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice in hot water or green tea",
+        "japanese": "茶漬け",
+        "pronunciation": "chazuke"
+    },
+
+    {
+        "category": "Toppings",
+        "english": "pickled plum",
+        "japanese": "梅干",
+        "pronunciation": "umeboshi"
+    },
+
+    {
+        "category": "Toppings",
+        "english": "pickled vegetables",
+        "japanese": "漬物",
+        "pronunciation": "tsukemono"
+    },
+
+    {
+        "category": "Rice",
+        "english": "omelette with fried rice and ketchup",
+        "japanese": "オムライス",
+        "pronunciation": "omuraisu"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice balls",
+        "japanese": "お握り",
+        "pronunciation": "onigiri"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice with red beans",
+        "japanese": "赤飯",
+        "pronunciation": "sekihan"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice seasoned with soup and soy sauce",
+        "japanese": "炊き込みご飯",
+        "pronunciation": "takikomigohan"
+    },
+
+    {
+        "category": "Toppings",
+        "english": "bonito flakes",
+        "japanese": "鰹節",
+        "pronunciation": "katsuobushi"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice with raw egg",
+        "japanese": "卵かけご飯",
+        "pronunciation": "tamagokakegohan"
+    },
+
+    {
+        "category": "Rice",
+        "english": "rice bowl",
+        "japanese": "丼",
+        "pronunciation": "donburi"
+    },
+
+    {
+        "category": "Rice",
+        "english": "donburi with beef",
+        "japanese": "牛丼",
+        "pronunciation": "gyuudon"
+    },
+
+    {
+        "category": "Pork",
+        "english": "deep-fried cutlet of pork",
+        "japanese": "豚カツ",
+        "pronunciation": "tonkatsu"
+    },
+
+    {
+        "category": "Rice",
+        "english": "donburi with miso and meat",
+        "japanese": "味噌カツ丼",
+        "pronunciation": "misokatsudon"
+    },
+
+    {
+        "category": "Rice",
+        "english": "donburi with chicken",
+        "japanese": "親子丼",
+        "pronunciation": "oyakodon"
+    },
+
+    {
+        "category": "Beef",
+        "english": "kobe beef",
+        "japanese": "神戸ビーフ",
+        "pronunciation": "koobebiifu"
+    },
+
+    {
+        "category": "Rice",
+        "english": "donburi with raw tuna sashimi",
+        "japanese": "鉄火丼",
+        "pronunciation": "tekkadon"
+    },
+
+    {
+        "category": "Rice",
+        "english": "donburi with shrimp and vegetables tempura",
+        "japanese": "天丼",
+        "pronunciation": "tendon"
+    },
+
+    {
+        "category": "Rice",
+        "english": "donburi with broiled eel",
+        "japanese": "鰻丼",
+        "pronunciation": "unadon"
+    },
+
+    {
+        "category": "Sushi",
+        "english": "sushi with ingredients on top of rice",
+        "japanese": "握り寿司",
+        "pronunciation": "nigirizushi"
+    },
+
+    {
+        "category": "Sushi",
+        "english": "roll sushi",
+        "japanese": "巻き寿司",
+        "pronunciation": "makizushi"
+    },
+
+    {
+        "category": "Sushi",
+        "english": "scattered sushi",
+        "japanese": "ちらし寿司",
+        "pronunciation": "chirashizushi"
+    },
+
+    {
+        "category": "Sushi",
+        "english": "fried tofu packet filled with rice",
+        "japanese": "稲荷寿司",
+        "pronunciation": "inarizushi"
+    },
+
+    {
+        "category": "Sushi",
+        "english": "rice wrapped in leafy pickle",
+        "japanese": "押し寿司",
+        "pronunciation": "meharizushi"
+    },
+
+    {
+        "category": "Noodles",
+        "english": "buckwheat Noodles",
+        "japanese": "蕎麦",
+        "pronunciation": "soba"
+    },
+
+    {
+        "category": "Noodles",
+        "english": "cold soba noodles topped with seaweed",
+        "japanese": "笊蕎麦",
+        "pronunciation": "zarusoba"
+    },
+
+    {
+        "category": "Noodles",
+        "english": "cold soba noodles",
+        "japanese": "裸蕎麦",
+        "pronunciation": "hadakasoba"
+    },
+
+    {
+        "category": "Noodles",
+        "english": "cold soba with toppings",
+        "japanese": "冷やし蕎麦",
+        "pronunciation": "hiyashisoba"
+    },
+
+    {
+        "category": "Bread",
+        "english": "melonpan, sweet bun",
+        "japanese": "メロンパン",
+        "pronunciation": "meronpan"
+    },
+
+    {
+        "category": "Bread",
+        "english": "bread filled with curry",
+        "japanese": "カレーパン",
+        "pronunciation": "kareepan"
+    },
+
+    {
+        "category": "Bread",
+        "english": "sweet roll filled with red bean paste",
+        "japanese": "あんパン",
+        "pronunciation": "anpan"
+    },
+
+    {
+        "category": "Vegetables",
+        "english": "deep-friedcroquette of mashed potato with fillings",
+        "japanese": "コロッケ",
+        "pronunciation": "korokke"
+    },
+
+    {
+        "category": "Fish-Seafood",
+        "english": "deep-fried skewered meat, vegetables or seafood",
+        "japanese": "串カツ",
+        "pronunciation": "kushikatsu"
+    },
+
+    {
+        "category": "Fish-Seafood",
+        "english": "seafood fried in light batter",
+        "japanese": "天ぷら",
+        "pronunciation": "tenpura"
+    },
+
+    {
+        "category": "Vegetables",
+        "english": "deep-fried tofu in hot broth",
+        "japanese": "揚げ出し豆腐",
+        "pronunciation": "agedashidofu"
+    },
+
+    {
+        "category": "Pork",
+        "english": "dumplings filled with pork and veggies",
+        "japanese": "餃子",
+        "pronunciation": "gyoza"
+    },
+
+    {
+        "category": "Pizza",
+        "english": "savoury pancakes/pizza with meat and veggies",
+        "japanese": "お好み焼き",
+        "pronunciation": "okonomiyaki"
+    },
+
+    {
+        "category": "Fish-Seafood",
+        "english": "dumplings filled with octopus",
+        "japanese": "蛸焼き",
+        "pronunciation": "takoyaki"
+    },
+
+    {
+        "category": "Fish-Seafood",
+        "english": "grilled eel",
+        "japanese": "鰻",
+        "pronunciation": "unagi"
+    },
+
+    {
+        "category": "Chicken",
+        "english": "barbecued chicken skewers",
+        "japanese": "焼き鳥",
+        "pronunciation": "yakitori"
+    },
+
+    {
+        "category": "Fish-Seafood",
+        "english": "flame-grilled fish with daikon (radish)",
+        "japanese": "焼き魚",
+        "pronunciation": "yakizakana"
+    },
+
+    {
+        "category": "Sweets",
+        "english": "azuki beans covered in sugar and dryed",
+        "japanese": "甘納豆",
+        "pronunciation": "amanattoo"
+    },
+
+    {
+        "category": "Sweets",
+        "english": "rice flour (mochiko) balls",
+        "japanese": "団子",
+        "pronunciation": "dango"
+    },
+
+    {
+        "category": "Snacks",
+        "english": "chocolate-coated biscuit sticks",
+        "japanese": "ポッキー",
+        "pronunciation": "pokkii"
+    },
+
+    {
+        "category": "Tea",
+        "english": "fermented rice drink",
+        "japanese": "甘酒",
+        "pronunciation": "amazake"
+    },
+
+    {
+        "category": "Soft Drinks",
+        "english": "milky beverage",
+        "japanese": "カルピス",
+        "pronunciation": "karupisu"
+    },
+
+    {
+        "category": "Soft Drinks",
+        "english": "carbonated lemonade",
+        "japanese": "ラムネ",
+        "pronunciation": "ramune"
+    },
+
+    {
+        "category": "Alcoholic Drinks",
+        "english": "made from long grain indica rice",
+        "japanese": "泡盛",
+        "pronunciation": "awamori"
+    },
+
+    {
+        "category": "Alcoholic Drinks",
+        "english": "beer",
+        "japanese": "ビール",
+        "pronunciation": "biiru"
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    },
+
+    {
+        "category": "",
+        "english": "",
+        "japanese": "",
+        "pronunciation": ""
+    }
+]
+

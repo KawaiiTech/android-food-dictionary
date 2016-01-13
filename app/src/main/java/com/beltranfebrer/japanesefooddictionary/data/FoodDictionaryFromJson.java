@@ -59,7 +59,7 @@ public class FoodDictionaryFromJson implements FoodDictionary {
         List<FoodDescription> result = new ArrayList<FoodDescription>();
         for (FoodDescription food:
              foodDescriptionList) {
-            if (food.english.contains(searchTerm)) {
+            if (food.english.toLowerCase().contains(searchTerm.toLowerCase())) {
                 result.add(food);
             }
         }
