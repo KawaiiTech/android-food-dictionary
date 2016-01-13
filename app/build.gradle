@@ -11,13 +11,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'jacoco-android'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 21
     buildToolsVersion "23.0.1"
 
     defaultConfig {
         applicationId "com.miquelbeltran.japanesefooddictionary"
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 21
         versionCode 4
         versionName "1.0"
     }

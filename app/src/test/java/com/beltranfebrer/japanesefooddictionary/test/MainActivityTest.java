@@ -47,6 +47,7 @@ public class MainActivityTest {
     public void testGetFragmentId() throws Exception {
         assertEquals(MainActivityView.FragmentId.Categories, presenter.getFragmentId(0));
         assertEquals(MainActivityView.FragmentId.Search, presenter.getFragmentId(1));
+        assertEquals(MainActivityView.FragmentId.Categories, presenter.getFragmentId(1234));
     }
 
     @Test

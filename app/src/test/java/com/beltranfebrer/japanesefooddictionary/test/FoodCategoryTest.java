@@ -36,5 +36,6 @@ public class FoodCategoryTest {
     public void testGetList() throws Exception {
         assertEquals(1,category.getFoodDescriptionList().size());
         assertEquals(ENGLISH, category.getFoodDescriptionList().get(0).english);
+        assertEquals(JAPANESE + " (" + ENGLISH + ")", category.getFoodDescriptionList().get(0).toString());
     }
 }
