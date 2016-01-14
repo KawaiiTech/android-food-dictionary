@@ -12,6 +12,8 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.beltranfebrer.japanesefooddictionary.foodlist.FoodListFragment;
+
 public class MainActivity extends FragmentActivity implements MainActivityView {
 
     private MainActivityPresenter presenter = new MainActivityPresenter(this);;

@@ -1,4 +1,4 @@
-package com.beltranfebrer.japanesefooddictionary.test;
+package com.beltranfebrer.japanesefooddictionary.data.test;
 
 import com.beltranfebrer.japanesefooddictionary.data.FoodCategory;
 import com.beltranfebrer.japanesefooddictionary.data.FoodDescription;

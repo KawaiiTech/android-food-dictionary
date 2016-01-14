@@ -1,13 +1,16 @@
-package com.beltranfebrer.japanesefooddictionary.test;
+package com.beltranfebrer.japanesefooddictionary.data.test;
 
 import com.beltranfebrer.japanesefooddictionary.BuildConfig;
 import com.beltranfebrer.japanesefooddictionary.R;
 import com.beltranfebrer.japanesefooddictionary.data.CategoryIcons;
 
 import org.apache.tools.ant.filters.StringInputStream;
+import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
@@ -23,7 +26,8 @@ import static junit.framework.Assert.assertEquals;
  * Created by miquel on 12.01.16.
  */
 @RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@Config(constants = BuildConfig.class,
+        packageName = "com.beltranfebrer.japanesefooddictionary")
 public class CategoryIconsTest {
 
     private CategoryIcons categoryIcons;
@@ -48,6 +52,11 @@ public class CategoryIconsTest {
         categoryIcons = new CategoryIcons();
     }
 
+    @After
+    public void tearDown() throws Exception {
+
+    }
+
     @Test
     public void testJson() throws Exception {
         InputStream in = new StringInputStream(JSON);
@@ -62,7 +71,6 @@ public class CategoryIconsTest {
     }
 
     @Test
-    @Config(assetDir="src/test/assets")
     public void testLoadDiccionary() throws Exception {
         categoryIcons.loadDictionary(RuntimeEnvironment.application, "iconIDdict.json");
         assertEquals("icon_cat_sweet", categoryIcons.getIconForCategory("Sweets"));

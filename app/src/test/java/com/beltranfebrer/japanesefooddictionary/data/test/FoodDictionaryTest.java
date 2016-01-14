@@ -1,4 +1,4 @@
-package com.beltranfebrer.japanesefooddictionary.test;
+package com.beltranfebrer.japanesefooddictionary.data.test;
 
 import android.app.SearchableInfo;
 
@@ -10,6 +10,7 @@ import com.beltranfebrer.japanesefooddictionary.data.FoodDictionary;
 import com.beltranfebrer.japanesefooddictionary.data.FoodDictionaryFromJson;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricGradleTestRunner;
@@ -26,14 +27,14 @@ import static org.mockito.Mockito.mock;
  * Created by miquel on 13.01.16.
  */
 @RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@Config(constants = BuildConfig.class,
+        packageName = "com.beltranfebrer.japanesefooddictionary")
 public class FoodDictionaryTest {
     private static final String SEARCH = "Rice";
     CategoryIcons categoryIconsMock = mock(CategoryIcons.class);
     FoodDictionaryFromJson dictionary;
 
     @Before
-    @Config(assetDir="src/test/assets")
     public void setUp() throws Exception {
         dictionary = new FoodDictionaryFromJson(categoryIconsMock);
         dictionary.loadDictionary(RuntimeEnvironment.application, "foodDict.json");
