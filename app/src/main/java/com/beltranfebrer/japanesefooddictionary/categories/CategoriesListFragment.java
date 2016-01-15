@@ -1,4 +1,4 @@
-package com.beltranfebrer.japanesefooddictionary;
+package com.beltranfebrer.japanesefooddictionary.categories;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,6 +11,7 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
+import com.beltranfebrer.japanesefooddictionary.R;
 import com.beltranfebrer.japanesefooddictionary.data.CategoryIcons;
 import com.beltranfebrer.japanesefooddictionary.data.FoodDictionaryFromJson;
 import com.beltranfebrer.japanesefooddictionary.dummy.DummyContent;
@@ -82,8 +83,7 @@ public class CategoriesListFragment extends Fragment implements AbsListView.OnIt
             categoryIcons.loadDictionary(getContext(), ICON_DICTIONARY_ASSET);
             FoodDictionaryFromJson foodDictionary = new FoodDictionaryFromJson(categoryIcons);
             foodDictionary.loadDictionary(getContext(), "foodDict.json");
-            mAdapter = new CategoriesExpandableListAdapter(getActivity(),
-                    android.R.layout.simple_list_item_1, android.R.id.text1, foodDictionary.getCategories());
+            mAdapter = new CategoriesExpandableListAdapter(getActivity(), foodDictionary.getCategories());
         } catch (IOException e) {
             e.printStackTrace();
         }

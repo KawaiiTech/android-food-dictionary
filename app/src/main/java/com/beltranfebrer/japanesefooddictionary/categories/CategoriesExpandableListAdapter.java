@@ -1,13 +1,16 @@
-package com.beltranfebrer.japanesefooddictionary;
+package com.beltranfebrer.japanesefooddictionary.categories;
 
+import android.content.Context;
 import android.database.DataSetObserver;
 import android.support.v4.app.FragmentActivity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.beltranfebrer.japanesefooddictionary.R;
 import com.beltranfebrer.japanesefooddictionary.data.FoodCategory;
 
 import java.util.List;
@@ -16,15 +19,11 @@ import java.util.List;
  * Created by miquel on 9/27/2015.
  */
 public class CategoriesExpandableListAdapter implements ExpandableListAdapter {
-    private final FragmentActivity activity;
-    private final int simple_list_item_1;
-    private final int text1;
+    private final Context context;
     private final List<FoodCategory> categories;
 
-    public CategoriesExpandableListAdapter(FragmentActivity activity, int simple_list_item_1, int text1, List<FoodCategory> categories) {
-        this.activity = activity;
-        this.simple_list_item_1 = simple_list_item_1;
-        this.text1 = text1;
+    public CategoriesExpandableListAdapter(Context context, List<FoodCategory> categories) {
+        this.context = context;
         this.categories = categories;
     }
 
@@ -76,12 +75,12 @@ public class CategoriesExpandableListAdapter implements ExpandableListAdapter {
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = activity.getLayoutInflater().inflate(R.layout.cat_item, null);
+            convertView = LayoutInflater.from(context).inflate(R.layout.cat_item, null);
         }
         TextView textView = (TextView) convertView.findViewById(R.id.catTextView);
         textView.setText(categories.get(groupPosition).toString());
         ImageView imageView = (ImageView) convertView.findViewById(R.id.catImageView);
-        Integer iconIdValue = activity.getResources().getIdentifier(categories.get(groupPosition).iconRes, "drawable", "com.miquelbeltran.japanesefooddictionary");
+        Integer iconIdValue = context.getResources().getIdentifier(categories.get(groupPosition).iconRes, "drawable", "com.miquelbeltran.japanesefooddictionary");
         imageView.setImageResource(iconIdValue);
         return convertView;
     }
@@ -89,7 +88,7 @@ public class CategoriesExpandableListAdapter implements ExpandableListAdapter {
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = activity.getLayoutInflater().inflate(R.layout.food_item, null);
+            convertView = LayoutInflater.from(context).inflate(R.layout.food_item, null);
         }
         TextView textView = (TextView) convertView.findViewById(R.id.japaneseTextView);
         textView.setText(categories.get(groupPosition).getFoodDescriptionList().get(childPosition).japanese);
@@ -112,7 +111,7 @@ public class CategoriesExpandableListAdapter implements ExpandableListAdapter {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return categories.isEmpty();
     }
 
     @Override
